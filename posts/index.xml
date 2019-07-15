@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Jul 2019 14:21:03 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2019 18:01:56 +0800</lastBuildDate>
     
 	<atom:link href="https://yzzzzzz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 自学教程</title>
+      <link>https://yzzzzzz.github.io/posts/hugo/</link>
+      <pubDate>Fri, 12 Jul 2019 18:01:56 +0800</pubDate>
+      
+      <guid>https://yzzzzzz.github.io/posts/hugo/</guid>
+      <description> hugo 自学教程 快速开始 mac系统可以使用 brew 进行快速安装 &amp;gt; brew install hugo
+如果你可以的话，可以参考hugo的官方文档，我在这里只是把简单的安装操作流程梳理了一下，仅供大家参考
+生成站点 执行一下命令，新生成的站点目录文件夹就会在命令行当前目录生成
+ hugo new site blog
+ 创建新的博客文章 执行以下命令，会在blog/content/post/first.md 生成文件
+ hugo new post/first.md
+ --- title: &amp;#34;Hugo 自学教程&amp;#34; date: 2019-07-12T18:01:56+08:00 draft: true ---  title 为该文章的标题 date 该文章的发布时间 draft 是否发布  </description>
+    </item>
     
     <item>
       <title>First</title>

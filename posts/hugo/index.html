@@ -9,16 +9,18 @@
   <meta name = 'keywords' content = 'YanZhuang Blog'>
   <meta property = 'og:locale' content = 'en_US' />
   <meta property = 'og:type' content = 'article' />
-  <meta property = 'og:title' content = 'Posts' />
-  <meta property = 'og:description' content = ''>
-  <meta property = 'og:url' content = 'https://yzzzzzz.github.io/posts/' />
-  <meta property = 'og:image' content = 'https://yzzzzzz.github.io/images/'/>
+  <meta property = 'og:title' content = 'Hugo 自学教程' />
+  <meta property = 'og:description' content = ' hugo 自学教程 快速开始 mac系统可以使用 brew 进行快速安装 &gt; brew install hugo
+如果你可以的话，可以参考hugo的官方文档，我在这里只是把简单的安装操作流程梳理了一下，仅供大家参考
+生成站点 执行一下命令， …'>
+  <meta property = 'og:url' content = 'https://yzzzzzz.github.io/posts/hugo/' />
+  <meta property = 'og:image' content = 'https://yzzzzzz.github.io/images/bg2.jpg'/>
 
 
   <link rel="apple-touch-icon" sizes="180x180" href = 'https://yzzzzzz.github.io/images/icons/apple-touch-icon.png'>
   <link rel="icon" type="image/png" sizes="32x32" href = 'https://yzzzzzz.github.io/images/icons/favicon-32x32.png'>
   <link rel="icon" type="image/png" sizes="16x16" href= 'https://yzzzzzz.github.io/images/icons/favicon-16x16.png'>
-  <link rel='canonical' href="https://yzzzzzz.github.io/posts/">
+  <link rel='canonical' href="https://yzzzzzz.github.io/posts/hugo/">
   <link rel = 'stylesheet' href = 'https://yzzzzzz.github.io/main.0b14d57208abf4e60856c5eeab6488bf3d47639fdffa6c4318525a178b54802f5b87edd9952b2f73d8b833f40e5f6428c4e818828c131ee4ee7d6934cdca6360.css' integrity = 'sha512-CxTVcgir9OYIVsXuq2SIvz1HY5/f&#43;mxDGFJaF4tUgC9bh&#43;3ZlSsvc9i4M/QOX2QoxOgYgowTHuTufWk0zcpjYA=='>
 </head>
 
@@ -39,20 +41,59 @@
 
     <main>
       
-  <section class = 'intro'>
-  <div class = 'intro_inner'>
-    <div><div class = 'waves'>
-  <canvas id = 'waves' class = 'waves_inner'></canvas>
-</div>
-<script src =  'https://yzzzzzz.github.io/js/sine-waves.min.js'></script>
-<script src = 'https://yzzzzzz.github.io/js/audio.js'></script>
-</div>
-    <h1 class = 'intro_headline'>Posts</h1>
-    <p class = 'intro_desc'></p>
-  </div>
+<section class = 'post_header' style = 'background-image:url(https://yzzzzzz.github.io/images/bg2.jpg);'>
+  <h1 class='post_title' itemprop='name headline'>Hugo 自学教程</h1>
+  
+  
+  
+  </p>
 </section>
-<ul class='posts flex wrap blog' id = 'posts'>
-    <li class = 'duo post_item'>
+<div class = 'post'>
+  <article class='post_content' itemprop='articleBody'>
+    
+
+<h1 id="hugo-自学教程">hugo 自学教程</h1>
+
+<h2 id="快速开始">快速开始</h2>
+
+<p>mac系统可以使用 <em>brew</em> 进行快速安装
+ &gt; brew install hugo</p>
+
+<p>如果你可以的话，可以参考hugo的官方文档，我在这里只是把简单的安装操作流程梳理了一下，仅供大家参考</p>
+
+<h2 id="生成站点">生成站点</h2>
+
+<p>执行一下命令，新生成的站点目录文件夹就会在命令行当前目录生成</p>
+
+<blockquote>
+<p>hugo new site blog</p>
+</blockquote>
+
+<h2 id="创建新的博客文章">创建新的博客文章</h2>
+
+<p>执行以下命令，会在blog/content/post/first.md 生成文件</p>
+
+<blockquote>
+<p>hugo new post/first.md</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4">---
+title: &#34;Hugo 自学教程&#34;
+date: 2019-07-12T18:01:56+08:00
+draft: true
+---</pre></div>
+<ul>
+<li>title 为该文章的标题</li>
+<li>date 该文章的发布时间</li>
+<li>draft 是否发布</li>
+</ul>
+
+  </article>
+  
+  <aside>
+    <h3><span class = 'pretty'>Recent Posts</span></h3>
+    <ul class='flex post_aside'>
+      
+       <li class = 'duo post_item'>
   <a class = 'show' href='https://yzzzzzz.github.io/posts/hugo/' title = 'Hugo 自学教程' style = 'background-image: url(https://yzzzzzz.github.io/images/bg2.jpg);'>
   </a>
   <div class = 'excerpt'>
@@ -65,7 +106,8 @@
   </div>
 </li>
 
-    <li class = 'duo post_item'>
+      
+       <li class = 'duo post_item'>
   <a class = 'show' href='https://yzzzzzz.github.io/posts/first/' title = 'First' style = 'background-image: url(https://yzzzzzz.github.io/images/bg1.jpg);'>
   </a>
   <div class = 'excerpt'>
@@ -77,10 +119,12 @@
   </div>
 </li>
 
-</ul>
-
-
-
+      
+    </ul>
+  </aside>
+</div>
+<script src = 'https://yzzzzzz.github.io/js/autosize.min.js'></script>
+<script src = 'https://yzzzzzz.github.io/js/timeago.js'></script>
 
     </main>
     <footer class = 'footer'>
